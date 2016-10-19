@@ -38,24 +38,14 @@ function capicua() {
     var matriu = [];
     var matriu2 = [];
     var x;
-    
+    var punt = true;
     
     matriu = text1.split("").reverse();
     matriu2 = text2.split("");
     
-    //matriu = matriu.reverse();
-    var punt = true;
-    
-    console.log(matriu);
-    
-    /*if(matriu === matriu.reverse()){
-        console.log(matriu);
-    }*/
-    
     for(x in matriu) {
         if(matriu[x] !== matriu2[x]){
             punt = false;
-            console.log("jdfskjfkhdjk");
             break;
         }
     }
