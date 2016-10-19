@@ -60,3 +60,24 @@ function capicua() {
     
     return true;
 }
+
+function diferents () {
+    var numParam = arguments.length;
+    var resposta;
+    
+    switch(numParam) {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        default:
+            resposta = "Num de paràmetres incorrecte";
+            break;
+    }
+
+    document.getElementById("desti").innerHTML = resposta;
+    
+    return true;
+}
