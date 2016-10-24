@@ -12,6 +12,20 @@
             <input type="button" onclick="textMaj(document.getElementById('text').value);" value="Enviar" /><br />
             Text palíndrom:<input type="text" value="" id="capicua" /><br />
             <input type="button" onclick="capicua(document.getElementById('capicua').value);" value="Enviar" /><br />
+            Paràmetres:<br />
+            Cub<input type="text" value="" id="cub" />
+            <input type="button" onclick="parametres(1, document.getElementById('cub').value);" value="Cub" /><br />
+            Suma<input type="text" value="" id="suma1" />+<input type="text" value="" id="suma2" />
+            <input type="button" onclick="parametres(2, document.getElementById('suma1').value, 
+                        document.getElementById('suma2').value);" value="Suma" /><br />
+            Multiplicar<input type="text" value="" id="mult1" />*<input type="text" value="" id="mult2" />*
+            <input type="text" value="" id="mult3" />
+            <input type="button" onclick="parametres(3, document.getElementById('mult1').value, 
+                        document.getElementById('mult2').value, document.getElementById('mult3').value);" value="Multiplica" /><br />
+            Lowerize<input type="text" value="" id="low" />
+            <input type="button" onclick="parametres(4, document.getElementById('low').value);" value="Lowerize" /><br />
+            Concatena<input type="text" value="" id="con1" /> concatena <input type="text" value="" id="con2" />
+            <input type="button" onclick="parametres(5, document.getElementById('con1').value, document.getElementById('con2').value);" value="Lowerize" /><br />
         </div>
         <div id="desti"></div>
     </body>

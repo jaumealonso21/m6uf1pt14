@@ -61,16 +61,24 @@ function capicua() {
     return true;
 }
 
-function diferents () {
-    var numParam = arguments.length;
+function parametres () {
     var resposta;
     
-    switch(numParam) {
+    switch(arguments[0]) {
         case 1:
+            resposta = parseInt(arguments[1])*parseInt(arguments[1])*parseInt(arguments[1]);
             break;
         case 2:
+            resposta = parseInt(arguments[1])+parseInt(arguments[2]);
             break;
         case 3:
+            resposta = parseInt(arguments[1])*parseInt(arguments[2])*parseInt(arguments[3]);
+            break;
+        case 4:
+            resposta = arguments[1].toLowerCase();
+            break;
+        case 5:
+            resposta = arguments[1] + arguments[2];
             break;
         default:
             resposta = "Num de paràmetres incorrecte";
